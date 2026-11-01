@@ -1,0 +1,90 @@
+# ==============================================================================
+# Git Ignore Configuration - Enterprise Inventory & Order Backend API
+# ==============================================================================
+
+# 1. Secrets, Credentials & Local Environment Files
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.cert
+*.crt
+
+# 2. Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 3. Python Bytecode, Compilers & Runtime Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+
+# 4. Testing, Coverage & Profiling Artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+
+# 5. Static Type Checkers & Linters
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# 6. Database Instances, Dumps & Migration DBs
+*.db
+*.sqlite
+*.sqlite3
+dev.db
+test.db
+*.dump
+*.sql.gz
+
+# 7. Logs, Process IDs & Schedulers
+*.log
+logs/
+*.pid
+celerybeat-schedule
+celerybeat.pid
+
+# 8. IDE, Editor & Operating System Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 9. Packaging, Distribution & Builds
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# 10. Scratchpads, Notebooks & Temporary Scripts
+scratch/
+scratch.*
+temp.*
+sandbox.*
+test_script.*
+untitled.ipynb
+*.ipynb
+.ipynb_checkpoints/
+
+# 11. Docker Local Overrides
+docker-compose.override.yml
